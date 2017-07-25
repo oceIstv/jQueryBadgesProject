@@ -4,14 +4,15 @@ $(function() {
     url: 'https://www.codeschool.com/users/osrh.json',
     dataType: 'jsonp',
     success: function(response) {
-      console.log(response);
+
     addCourses(response.courses.completed);
+
     }
   });
 
 
 
-  var addCourses = function(courses){
+  function addCourses(courses){
     var badges = $('#badges');
     courses.forEach(function(course){
 
@@ -34,7 +35,7 @@ $(function() {
         text: 'See Course'
       }).appendTo($course);
     })
-  };
+  }
 
 
 });
