@@ -31,7 +31,7 @@ $(function() {
         'class': 'btn btn-primary',
         target: '_blank',
         href:course.url,
-        text: 'Click for Course'
+        text: 'See Course'
       }).appendTo($course);
     })
   };
